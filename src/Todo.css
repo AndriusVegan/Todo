@@ -1,0 +1,38 @@
+
+.todo{
+  color: bf#ffffff;
+  width: 300px;
+  background-color: #bf07ac;
+  height: 50px;
+  margin: 20px auto;
+  border-radius: 5px;
+   
+
+}
+
+.todo h2{
+  padding: 10px;
+
+}
+
+.deleteBtn{
+  /* border: none;
+  background-color: whitesmoke;
+  color: black;
+  font-weight: ;
+  font-size: calc(10px + 2vmin);
+  cursor: pointer;
+  border-radius: 20px;
+  padding: 0.1em; */
+  border: none;
+  color: black;
+  background-color: whitesmoke;
+  padding: 0.5rem;
+  font-size: 16px;
+  cursor: pointer;
+   border-radius: 20px;
+  margin-left: 20px;
+  
+
+}
+.deleteBtn:hover, .deleteBtn:focus {background: red;}
