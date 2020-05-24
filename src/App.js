@@ -1,12 +1,11 @@
 import React from "react";
-import "./App.css";
+import './App.css';
 import { useState } from "react";
 import Todo from "./Todo";
-// import { library, dom } from '@fortawesome/fontawesome-svg-core';
-// import solid from '@fortawesome/fontawesome-free-solid';
-// import faTrash from '@fortawesome/fontawesome-free-brands/faTrash';
+// import { library } from '@fortawesome/fontawesome-svg-core';
+// import { faTrash } from '@fortawesome/free-solid-svg-icons';
 
-// library.add(solid, faTrash);
+// library.add(faTrash)
 
 function App() {
   function deleteTodo(e) {
@@ -18,7 +17,7 @@ function App() {
 
     setTodos([...todos]);
   }
-
+  
   const [todos, setTodos] = useState([]);
 
   const [input, setInput] = useState("");
@@ -27,27 +26,27 @@ function App() {
     e.preventDefault();
 
     setTodos([input, ...todos]); //to bring the list on the top
-
+    
     setInput("");
+
   };
   return (
     <div className="App">
       <h1>MY TO DO APP</h1>
       <form className="todo-form">
-        <input
-          value={input}
+          <input value={input}
           onChange={(e) => setInput(e.target.value)}
           type="text"
-          placeholder="Add your task here"
-        ></input>
-        <button
+          placeholder="Add your task here">
+          </input>
+          <button
           className="addBtn"
           disabled={!input}
           type="submit"
           onClick={handleSubmit}
-        >
+          >
           ADD
-        </button>
+         </button>
 
         {todos.map((todo, index) => (
           <Todo
@@ -58,8 +57,9 @@ function App() {
           />
         ))}
       </form>
-    </div>
+   </div>
   );
-}
+       
+  }
 
 export default App;

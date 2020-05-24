@@ -1,6 +1,6 @@
 
 body{
-  background-image:url(background.jpg);
+  background-image: url(background.jpg);
   background-color: #9266ff;
 }
 
@@ -14,6 +14,10 @@ body{
   border-radius: 20px;
   height: 100vh;
   }
+h1{
+  padding-top: 20px;
+  color: #ffffff;
+}
 
 .todo-form input{
   background-color: rgb(27,112,137);
@@ -23,8 +27,9 @@ body{
   padding: 0 20px;
   margin: 20px;
   font-size: 18px;
-  border-radius: 10px;
+  border-radius: 5px;
   color: white;
+
 }
 
 .todo-form input::placeholder{
@@ -54,6 +59,3 @@ input:focus, input:hover {
   outline: none;
 }
 
-h1{
-  padding-top: 20px;
-}
