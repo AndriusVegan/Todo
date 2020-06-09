@@ -1,0 +1,49 @@
+.todo{
+  color: #fff;
+  width: 300px;
+  background-color: none;
+  height: 50px;
+  margin: 20px auto;
+  border: 1px solid whitesmoke;
+  border-radius: 5px;
+  position: relative;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 5px; */
+  
+}
+
+.todo h2{
+  padding: 10px;
+
+}
+
+.deleteBtn{
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: .8em;
+  background-color: #d9534f;
+  border: 1px solid #d43f3a;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 6px 12px;
+  margin-right: 10px;
+  outline: none;
+  
+
+}
+.deleteBtn:hover, .deleteBtn:focus {
+  background: red;
+  transition: all 0.5s ease;
+
+}
+
+@media (max-width: 574px) {
+  .todo {
+    width: 250px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
